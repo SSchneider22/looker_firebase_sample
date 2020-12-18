@@ -4,7 +4,7 @@
   elements:
   - title: Average Session Length
     name: Average Session Length
-    model: firebase
+    model: firebase_sagara
     explore: events
     type: single_value
     fields: [sessions.average_session_length]
@@ -17,7 +17,7 @@
     height: 3
   - title: Avg First Session Length
     name: Avg First Session Length
-    model: firebase
+    model: firebase_sagara
     explore: events
     type: single_value
     fields: [sessions.average_first_session_length]
@@ -30,7 +30,7 @@
     height: 3
   - title: MAU
     name: MAU
-    model: firebase
+    model: firebase_sagara
     explore: events
     type: looker_column
     fields: [events.number_of_users, events.event_month]
@@ -45,7 +45,7 @@
     height: 5
   - title: Retention by Signup Cohort
     name: Retention by Signup Cohort
-    model: firebase
+    model: firebase_sagara
     explore: events
     type: looker_line
     fields: [events.retention_day, events.number_of_users, events.user_first_touch_week]
@@ -116,7 +116,7 @@
     height: 6
   - title: Retention by Platform
     name: Retention by Platform
-    model: firebase
+    model: firebase_sagara
     explore: events
     type: looker_line
     fields: [events.number_of_users, events.retention_day, events.platform]
@@ -185,7 +185,7 @@
     height: 6
   - title: Retention by Version
     name: Retention by Version
-    model: firebase
+    model: firebase_sagara
     explore: events
     type: looker_line
     fields: [events.number_of_users, events.retention_day, events.version]
@@ -255,7 +255,7 @@
     height: 6
   - title: D1 Retention
     name: D1 Retention
-    model: firebase
+    model: firebase_sagara
     explore: events
     type: single_value
     fields: [events.d1_retention_rate]
@@ -268,7 +268,7 @@
     height: 2
   - title: D14 Retention
     name: D14 Retention
-    model: firebase
+    model: firebase_sagara
     explore: events
     type: single_value
     fields: [events.d14_retention_rate]

@@ -2,7 +2,7 @@
 # Session pattern from https://stackoverflow.com/a/55116882/1108832
 # If you're using user_id instead of user_pseudo_id you should replace it!
 datagroup: sessions {
-  sql_trigger: select count(*) from `firebase-public-project.analytics_153293282.events_*` ;;
+  sql_trigger: select 1 ;; # SELECT 1だと、手動で更新しない限りPDTは更新されない！
 }
 view: last {
   derived_table: {
