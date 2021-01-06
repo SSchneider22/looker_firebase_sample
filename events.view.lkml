@@ -1,6 +1,7 @@
 include: "user_properties_generated*"
 include: "events_generated*"
 
+
 view: events {
   sql_table_name: `sagara-satoshi.firebase_sample.events_*`  ;;
 
